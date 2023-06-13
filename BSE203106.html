@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="btn-container">
+            <button class="btn btn-clear">C</button>
+            <button class="btn btn-ln">ln(x)</button>
+            <button class="btn btn-square">x<sup>2</sup></button>
+            <button class="btn btn-cube">x<sup>3</sup></button>
+            <button class="btn operator" data-operator="*">*</button>
+            <button class="btn" onclick="appendToResult('7')">7</button>
+            <button class="btn" onclick="appendToResult('8')">8</button>
+            <button class="btn" onclick="appendToResult('9')">9</button>
+            <button class="btn operator" data-operator="-">-</button>
+            <button class="btn" onclick="appendToResult('4')">4</button>
+            <button class="btn" onclick="appendToResult('5')">5</button>
+            <button class="btn" onclick="appendToResult('6')">6</button>
+            <button class="btn operator" data-operator="+">+</button>
+            <button class="btn" onclick="appendToResult('1')">1</button>
+            <button class="btn" onclick="appendToResult('2')">2</button>
+            <button class="btn" onclick="appendToResult('3')">3</button>
+            <button class="btn operator" data-operator="/">/</button>
+            <button class="btn btn-calculate" id="calculate">=</button>
+            <button class="btn" onclick="appendToResult('0')">0</button>
+            <button class="btn" onclick="appendToResult('.')">.</button>
+        </div>
+    </div>
+    <div class="textbox">
+        <h1> Basic Calculator </h1>
+        <div class="text">
+            <b>This is a basic calulator. It can perform some functions such 
+            as Addition,Subtraction, Multiplication, Division, Square and 
+            Cube.The calulator is made using HTML, CSS and JQuery. The User 
+            can insert values by pressing the digits on the calculator.<br>
+            Developed by Sheraz Ahmed (BSE203106).</b>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

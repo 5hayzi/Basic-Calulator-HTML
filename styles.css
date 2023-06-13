@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to top left, #ccccff 23%, #ccffcc 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container{
+    margin-top: 100px;
+    display: flex;
+}
+
+.container .textbox {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.container .textbox .text {
+    font-size: 1em;
+    letter-spacing: 3px;
+    font-family: monospace;
+    width: fit-content;
+    overflow: hidden;
+    animation: typing 2s steps(18), 
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.container .calculator {
+    width: 600px;
+    max-height: 400px;
+    background: linear-gradient(to top right, #00ffff 1%, #00ff99 87%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.container .calculator input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.container .calculator .btn-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.container .calculator .btn {
+    padding: 20px;
+    text-align: center;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.container .calculator .btn.btn-clear{
+    background-color: rgb(255, 0, 0);
+}
+.container .calculator .btn.btn-clear:hover{
+    background-color: rgb(185, 0, 0);
+}
+
+.container .calculator .btn:hover {
+    background-color: #45a049;
+}
+
+.container .calculator .btn.operator {
+    background-color: #ffa500;
+}
+
+.container .calculator .btn.operator:hover {
+    background-color: #e17c00;
+}
